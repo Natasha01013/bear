@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан Сытый Мишка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ресторан Сытый Мишка</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#about">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="menu">
+        <h2>Меню</h2>
+        <ul>
+            <li>
+                Борщ - 250 руб. <button class="orderButton">Заказать</button>
+            </li>
+            <li>
+                Пельмени - 300 руб. <button class="orderButton">Заказать</button>
+            </li>
+            <li>
+                Салат Оливье - 200 руб. <button class="orderButton">Заказать</button>
+            </li>
+            <li>
+                Компот - 150 руб. <button class="orderButton">Заказать</button>
+            </li>
+            <li>
+                Сыр каймак с медом - 350 руб. <button class="orderButton">Заказать</button>
+            </li>
+            <li>
+                Торт медовик - 400 руб. <button class="orderButton">Заказать</button>
+            </li>
+            <li>
+                Чай с медом - 100 руб. <button class="orderButton">Заказать</button>
+            </li>
+            <li>
+                Другие блюда - по запросу <button class="orderButton">Заказать</button>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Добро пожаловать в ресторан "Сытый Мишка"! Мы предлагаем вкусные домашние блюда и уютную атмосферу.</p>
+    </section>
+    <section id="order" class="hidden">
+        <h2>Ваш заказ</h2>
+        <form id="orderForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" required>
+            <input type="submit" value="Отправить заказ">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Ресторан Сытый Мишка. Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
